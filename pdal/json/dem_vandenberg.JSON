@@ -1,0 +1,19 @@
+
+{
+    "pipeline": [
+        "C:/Users/conor/Documents/serdp/data/vandenberg/input/61602102.las",
+        {
+	        "type":"filters.range",
+	        "limits":"Z[0:100],Classification[2:2]"
+   	 	},
+        {
+            "type": "writers.gdal",
+            "filename":"C:/Users/conor/Documents/serdp/data/vandenberg/output/dem.tif",
+            "gdaldriver":"GTiff",
+            "resolution":"1.0",
+            "window_size":"5.0",
+            "dimension":"Z",
+            "output_type":"min"
+        }
+    ]
+}

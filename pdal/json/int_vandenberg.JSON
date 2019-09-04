@@ -1,0 +1,14 @@
+
+{
+    "pipeline": [
+        "C:/Users/conor/Documents/serdp/data/vandenberg/input/61602102.las",
+        {
+            "type": "writers.gdal",
+            "filename":"C:/Users/conor/Documents/serdp/data/vandenberg/output/int.tif",
+            "gdaldriver":"GTiff",
+            "resolution":"1.0",
+            "window_size":"5.0",
+            "dimension":"Intensity"
+        }
+    ]
+}

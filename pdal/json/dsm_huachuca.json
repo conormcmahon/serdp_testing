@@ -1,0 +1,15 @@
+
+{
+    "pipeline": [
+        "D:/serdp/data/huachuca/input/points_all_ft_huachuca_tile01_WGS84.laz",
+        {
+            "type": "writers.gdal",
+            "filename":"D:/serdp/data/huachuca/output/dsm.tif",
+            "gdaldriver":"GTiff",
+            "resolution":"0.5",
+            "window_size":"5.0",
+            "dimension":"Z",
+            "output_type":"max"
+        }
+    ]
+}
