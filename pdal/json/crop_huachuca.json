@@ -1,0 +1,14 @@
+
+{
+    "pipeline": [
+        "/home/conor/SERDP/data/huachuca/input/huachuca_til01.pcd",
+        {
+            "type":"filters.crop",
+            "bounds":"([563470,564470],[3502700,3503700])"
+        },
+        {
+            "type":"writers.pcd",
+            "filename":"huachuca_til01_crop.pcd"
+        }
+    ]
+}
