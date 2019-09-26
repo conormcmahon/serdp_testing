@@ -1,15 +1,14 @@
 
 {
     "pipeline": [
+        "/home/cmcmahon/serdp/Pendelton_data/PE_LiDAR_2016/61852120.las",
         {
-		"type":"readers.las"
-	},
-	{
 	        "type":"filters.range",
 	        "limits":"Classification[2:2]"
    	 	},
         {
             "type": "writers.gdal",
+            "filename":"/home/cmcmahon/serdp/Pendelton_data/PE_LiDAR_2016/pdal/DEM/61852120_2.tif",
             "gdaldriver":"GTiff",
             "resolution":"1.0",
             "window_size":"5.0",
