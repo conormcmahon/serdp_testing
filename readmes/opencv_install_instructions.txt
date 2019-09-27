@@ -1,0 +1,6 @@
+
+
+Windows OpenCV Install
+https://www.learnopencv.com/install-opencv3-on-windows/
+- Install CMake: https://cmake.org/download/
+- Install Anaconda (if it's not already installed - see PDAL instructions)
